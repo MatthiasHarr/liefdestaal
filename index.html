@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wat is jouw liefdestaal? | MoJo Clinics</title>
+<meta name="description" content="Ontdek je liefdestaal in 3 minuten, en wat die betekent voor jullie intimiteit en seks. Een test van MoJo Clinics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<style>
+html,body{margin:0;background:#F8F6F9}
+#mojo-lt{
+  --bg:#F8F6F9;
+  --surface:#FFFFFF;
+  --ink:#231A2B;
+  --muted:#6B6175;
+  --line:#E6E0EA;
+  --accent:#A3335A;
+  --accent-soft:#F6E6EC;
+  --navy:#2E3A68;
+  --l-woorden:#A3335A;
+  --l-aandacht:#2E3A68;
+  --l-attenties:#B07A2A;
+  --l-helpen:#3D7A63;
+  --l-aanraking:#7A4B9E;
+  --display:"Gloock", Georgia, "Times New Roman", serif;
+  --body:"Instrument Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+#mojo-lt, #mojo-lt *{box-sizing:border-box}
+#mojo-lt{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;padding-inline:16px;padding-block:28px 56px}
+#mojo-lt .wrap{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+#mojo-lt .brand{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--muted)}
+#mojo-lt .brand b{color:var(--accent)}
+#mojo-lt h1,#mojo-lt h2,#mojo-lt h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0;line-height:1.12}
+#mojo-lt h1{font-size:clamp(34px,7vw,52px)}
+#mojo-lt h2{font-size:clamp(26px,5vw,34px)}
+#mojo-lt h3{font-size:22px}
+#mojo-lt p{margin:0}
+#mojo-lt .lede{font-size:19px;color:var(--muted);max-width:60ch}
+#mojo-lt .card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:clamp(20px,4vw,36px);display:flex;flex-direction:column;gap:20px}
+#mojo-lt .langs{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+#mojo-lt .langs li{font-size:14px;font-weight:600;padding:6px 12px;border-radius:999px;border:1px solid var(--line);display:flex;align-items:center;gap:8px}
+#mojo-lt .dot{width:9px;height:9px;border-radius:50%;flex:none}
+#mojo-lt .meta{font-size:14px;color:var(--muted)}
+#mojo-lt .btn{font:inherit;font-weight:600;font-size:16px;border-radius:999px;padding:13px 24px;border:1px solid transparent;cursor:pointer;background:var(--accent);color:var(--surface);align-self:flex-start}
+#mojo-lt .btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+#mojo-lt .btn:focus-visible,#mojo-lt .opt:focus-visible{outline:3px solid var(--navy);outline-offset:2px}
+#mojo-lt .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+#mojo-lt .progress{height:6px;border-radius:6px;background:var(--line);overflow:hidden}
+#mojo-lt .progress span{display:block;height:100%;background:var(--accent);transition:width .25s ease}
+#mojo-lt .qnum{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
+#mojo-lt .statement{font-family:var(--display);font-size:clamp(22px,4.4vw,30px);line-height:1.25;text-wrap:balance;min-height:3.8em}
+#mojo-lt .opts{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+#mojo-lt .opt{font:inherit;font-size:14px;line-height:1.25;font-weight:500;padding:14px 6px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:6px;min-width:0}
+#mojo-lt .opt .n{font-weight:700;font-size:18px;font-variant-numeric:tabular-nums}
+#mojo-lt .opt:hover{border-color:var(--accent)}
+#mojo-lt .opt.on{background:var(--accent-soft);border-color:var(--accent)}
+@media (max-width:520px){
+#mojo-lt .opts{grid-template-columns:1fr}
+#mojo-lt .opt{flex-direction:row;justify-content:flex-start;padding:12px 14px;gap:12px}
+}
+#mojo-lt .bars{display:flex;flex-direction:column;gap:12px}
+#mojo-lt .bar{display:grid;grid-template-columns:150px 1fr 44px;gap:12px;align-items:center;font-size:15px}
+#mojo-lt .bar .lab{font-weight:600;min-width:0}
+#mojo-lt .track{height:12px;border-radius:12px;background:var(--line);overflow:hidden}
+#mojo-lt .track i{display:block;height:100%;border-radius:12px}
+#mojo-lt .bar .val{text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+@media (max-width:520px){
+#mojo-lt .bar{grid-template-columns:1fr 44px}
+#mojo-lt .bar .track{grid-column:1 / -1;order:3}
+}
+#mojo-lt .eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+#mojo-lt .block{display:flex;flex-direction:column;gap:8px}
+#mojo-lt .block h4{margin:0;font-size:15px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+#mojo-lt .bedroom{background:var(--accent-soft);border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+#mojo-lt .bedroom h4{color:var(--accent)}
+#mojo-lt details{border-top:1px solid var(--line);padding-top:14px}
+#mojo-lt details summary{cursor:pointer;font-weight:600;list-style:none;display:flex;align-items:center;gap:10px}
+#mojo-lt details summary::-webkit-details-marker{display:none}
+#mojo-lt details summary::after{content:"+";margin-left:auto;font-size:20px;color:var(--muted)}
+#mojo-lt details[open] summary::after{content:"−"}
+#mojo-lt details .inner{display:flex;flex-direction:column;gap:12px;padding-top:12px}
+#mojo-lt .note{font-size:15px;color:var(--muted);display:flex;flex-direction:column;gap:10px}
+#mojo-lt .note strong{color:var(--ink)}
+#mojo-lt .cta{border-color:var(--navy)}
+#mojo-lt a{color:var(--accent);font-weight:600}
+#mojo-lt .small{font-size:13px;color:var(--muted)}
+#mojo-lt .copyfield{font:inherit;font-size:14px;width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+@media (prefers-reduced-motion:reduce){
+#mojo-lt *{transition:none!important}
+}
+
+#mojo-lt [hidden]{display:none!important}
+#mojo-lt{padding-inline:16px;padding-block:28px 56px}
+#mojo-lt .stack{display:flex;flex-direction:column;gap:28px}
+</style>
+</head>
+<body>
+<div id="mojo-lt">
+<div class="wrap">
+  <div class="brand"><b>MoJo</b> Clinics · Test</div>
+
+  <section id="lt-intro" class="card">
+    <h1>Hoe geef en ontvang jij liefde?</h1>
+    <p class="lede">Iedereen geeft en ontvangt liefde op een eigen manier. Ontdek wat jij het meest nodig hebt om je geliefd te voelen, en wat dat betekent voor jullie intimiteit en seks.</p>
+    <ul class="langs" aria-label="De vijf liefdestalen">
+      <li><span class="dot" style="background:var(--l-woorden)"></span>Woorden van waardering</li>
+      <li><span class="dot" style="background:var(--l-aandacht)"></span>Tijd en aandacht</li>
+      <li><span class="dot" style="background:var(--l-attenties)"></span>Attenties</li>
+      <li><span class="dot" style="background:var(--l-helpen)"></span>Helpende handen</li>
+      <li><span class="dot" style="background:var(--l-aanraking)"></span>Aanraking</li>
+    </ul>
+    <p class="meta">15 uitspraken · ongeveer 3 minuten · je antwoorden worden nergens opgeslagen. Geen relatie op dit moment? Denk aan je laatste relatie, of aan wat je zou willen.</p>
+    <button class="btn" id="lt-start" type="button">Start de test</button>
+  </section>
+
+  <section id="lt-quiz" class="card" hidden>
+    <div class="row" style="justify-content:space-between">
+      <span class="qnum" id="lt-qnum">Uitspraak 1 van 15</span>
+      <button class="btn ghost" id="lt-back" type="button" style="padding:8px 16px;font-size:14px">Vorige</button>
+    </div>
+    <div class="progress" aria-hidden="true"><span id="lt-bar" style="width:0%"></span></div>
+    <p class="statement" id="lt-statement" aria-live="polite"></p>
+    <div class="opts" id="lt-opts" role="group" aria-label="Hoeveel past deze uitspraak bij jou?"></div>
+  </section>
+
+  <section id="lt-result" hidden class="stack">
+    <div class="card">
+      <span class="eyebrow">Jouw uitslag</span>
+      <h2 id="lt-r-title"></h2>
+      <p id="lt-r-core"></p>
+      <div class="bedroom">
+        <h4 class="block" style="margin:0">In de slaapkamer</h4>
+        <p id="lt-r-bed"></p>
+      </div>
+      <div class="block"><h4>Probeer samen</h4><p id="lt-r-tip"></p></div>
+      <div class="block"><h4>Voor je partner</h4><p id="lt-r-partner"></p></div>
+    </div>
+
+    <div class="card">
+      <h3>Jouw profiel</h3>
+      <p class="meta">Gemiddelde score per liefdestaal, op een schaal van 1 tot 5.</p>
+      <div class="bars" id="lt-bars"></div>
+      <p id="lt-r-low" class="meta"></p>
+    </div>
+
+    <div class="card">
+      <h3>Alle vijf de talen</h3>
+      <div id="lt-all"></div>
+    </div>
+
+    <div class="card">
+      <h3>Doe de test samen</h3>
+      <p>Laat je partner de test ook doen en leg jullie profielen naast elkaar. Waar verschillen jullie het meest? Daar zit vaak het misverstand. Jij geeft liefde in je eigen taal, en die komt bij de ander minder aan dan je denkt.</p>
+      <div class="row">
+        <button class="btn" id="lt-copy" type="button">Kopieer de link</button>
+        <button class="btn ghost" id="lt-again" type="button">Opnieuw beginnen</button>
+      </div>
+      <input class="copyfield" id="lt-copyfield" readonly hidden aria-label="Link naar de test">
+    </div>
+
+    <div class="card note">
+      <h3 style="color:var(--ink)">Wat deze test wel en niet zegt</h3>
+      <p>Het model van de vijf liefdestalen komt van de Amerikaanse relatiecounselor Gary Chapman (1992). Het is populair en een fijne manier om het gesprek met je partner te openen.</p>
+      <p>Wetenschappelijk is het dunner onderbouwd dan vaak gedacht. De meeste mensen vinden alle vijf de talen belangrijk. Wat telt is vooral dat je partner aanvoelt wat jij op dit moment nodig hebt. Kijk daarom naar je hele profiel. Je hoogste score is een richting.</p>
+      <p>Wat je nodig hebt, kan ook veranderen. Bijvoorbeeld na de geboorte van een kind, in de overgang, bij stress of na een ziekte.</p>
+    </div>
+
+    <div class="card cta">
+      <h3>Lukt het niet samen?</h3>
+      <p>Soms ligt het niet aan de taal, maar loopt het lichaam of het verlangen vast. Bij MoJo Clinics helpen wij mannen, vrouwen en stellen met intimiteit, zin en seksuele klachten. Ook na kanker of bij hormonale veranderingen.</p>
+      <a href="https://www.mojo-clinics.com" target="_blank" rel="noopener">Meer over MoJo Clinics →</a>
+    </div>
+
+    <p class="small">Deze test is een hulpmiddel voor een goed gesprek en geen diagnose. Bronnen: Chapman G. <i>The Five Love Languages</i>. Northfield Publishing, 1992. Impett EA, Park HG, Muise A. Popular psychology through a scientific lens: evaluating love languages from a relationship science perspective. <i>Current Directions in Psychological Science</i>, 2024.</p>
+  </section>
+</div>
+</div>
+<script>
+(function(){
+
+const LANGS = {
+  woorden: {
+    name: "Woorden van waardering", color: "var(--l-woorden)",
+    core: "Jij voelt je geliefd als je het hoort. Een compliment, een ‘ik ben trots op je’, een berichtje midden op de dag. Andersom komt een hard woord bij jou ook harder aan dan bij een ander.",
+    bed: "Bij jou begint verlangen vaak in je hoofd. Horen wat je partner mooi of opwindend aan je vindt, werkt als voorspel. Stilte tijdens of na de seks kan voelen als afstand, ook als die niet zo bedoeld is.",
+    tip: "Zeg na het vrijen één ding hardop dat je fijn vond. Kort en concreet. Dus niet ‘het was fijn’, maar ‘ik vond het heerlijk toen je…’.",
+    partner: "Complimenten buiten de slaapkamer maken de weg ernaartoe korter. Een lief woord ’s ochtends werkt ’s avonds nog door."
+  },
+  aandacht: {
+    name: "Tijd en aandacht", color: "var(--l-aandacht)",
+    core: "Jij voelt je geliefd als iemand er helemaal is. Geen telefoon op tafel, geen half oor. Een wandeling waarin jullie echt praten zegt jou meer dan een dure avond uit.",
+    bed: "Haast is voor jou de grootste lustkiller. Seks die er even tussendoor moet, voelt al snel als een taak. Je hebt tijd nodig om te landen. Die aanloop is voor jou de kern van goede seks.",
+    tip: "Plan een avond samen zonder doel. Geen verplichting tot seks, wel tijd, aandacht en ruimte. Juist als de druk eraf is, ontstaat er vaak meer.",
+    partner: "De telefoon wegleggen en echt luisteren is voor deze persoon al voorspel."
+  },
+  attenties: {
+    name: "Attenties", color: "var(--l-attenties)",
+    core: "Jij voelt je geliefd door een gebaar dat zegt: ik dacht aan je. Het gaat niet om geld. Een meegebrachte koffie, een kaartje in je tas, je lievelingschocola. Het bewijs dat je in iemands hoofd zat.",
+    bed: "Voor jou maakt de moeite het verschil. Een kaars aansteken, schone lakens, iets nieuws aantrekken, samen een speeltje uitzoeken. Het zegt: dit moment is het waard om ervoor te zorgen.",
+    tip: "Verras elkaar eens per maand met iets kleins voor jullie intimiteit. Het hoeft niet groot of duur. Het gebaar telt.",
+    partner: "Een vergeten verjaardag of jubileum komt bij deze persoon harder aan dan je denkt. Zet het in je agenda."
+  },
+  helpen: {
+    name: "Helpende handen", color: "var(--l-helpen)",
+    core: "Voor jou zegt doen meer dan zeggen. Iemand die de vaatwasser uitruimt, de kinderen naar bed brengt of dat lastige telefoontje overneemt, laat zien dat hij of zij om je geeft.",
+    bed: "Een volle kop is voor jou een rem op zin. Zolang je aan je takenlijst denkt, is er geen ruimte voor lust. Jouw verlangen begint vaak in de keuken, op het moment dat de ander iets van je lijstje haalt.",
+    tip: "Vraag elkaar op zondag: wat kan ik deze week van jouw lijstje overnemen? En doe het dan ook, zonder dat erom gevraagd hoeft te worden.",
+    partner: "Een klus overnemen zonder dat erom gevraagd is, werkt bij deze persoon sterker dan een bos bloemen."
+  },
+  aanraking: {
+    name: "Aanraking", color: "var(--l-aanraking)",
+    core: "Jij voelt je geliefd via je huid. Een hand op je rug, tegen elkaar aan op de bank, een knuffel als je thuiskomt. Zonder aanraking voel je je snel alleen, ook naast je partner.",
+    bed: "Let op een valkuil. Als elke aanraking een opstapje naar seks wordt, gaat de ander aanraking vaak juist ontwijken. Voor jou is aanraking zonder doel misschien wel het belangrijkst. Strelen, knuffelen, huid op huid. Dat voedt de band, en daarmee ook de zin.",
+    tip: "Spreek momenten af van aanraking zonder seks. In de seksuologie heet dat sensate focus: aanraken en ontdekken zonder einddoel. Het haalt de druk weg en brengt het plezier terug.",
+    partner: "Een lange knuffel of een hand in de nek doet bij deze persoon meer dan een lang gesprek."
+  }
+};
+
+const ITEMS = [
+  ["woorden","Ik voel me gezien als mijn partner hardop zegt wat hij of zij in me waardeert."],
+  ["aandacht","Een avond samen zonder telefoons voelt voor mij als een cadeau."],
+  ["aanraking","Een hand op mijn rug of een arm om me heen geeft me een gevoel van veiligheid."],
+  ["helpen","Als mijn partner iets van mijn takenlijst overneemt, voel ik me echt geliefd."],
+  ["attenties","Een klein cadeautje of meegebrachte bloem laat mij zien dat iemand aan me dacht."],
+  ["aandacht","Ik raak geïrriteerd als mijn partner maar half luistert terwijl ik iets vertel."],
+  ["woorden","Een lief berichtje midden op de dag kan mijn hele dag goedmaken."],
+  ["helpen","Woorden zijn mooi, maar wat iemand doet zegt mij meer."],
+  ["aanraking","Als we een tijd niet lichamelijk zijn geweest, voel ik afstand, ook als het verder goed gaat."],
+  ["attenties","Ik bewaar kaartjes, briefjes of kleine dingen die ik van mijn partner kreeg."],
+  ["woorden","In bed vind ik het fijn als mijn partner zegt wat hij of zij mooi of opwindend aan me vindt."],
+  ["aandacht","Seks voelt voor mij pas goed als er tijd is en niets gehaast hoeft."],
+  ["helpen","Ik heb meer zin in intimiteit als ik niet alles alleen hoef te regelen."],
+  ["attenties","Ik word blij als mijn partner moeite doet voor een bijzondere avond, zoals kaarsen of een verrassing."],
+  ["aanraking","Strelen, knuffelen en tegen elkaar aan liggen is voor mij net zo belangrijk als seks zelf."]
+];
+const SCALE = ["Helemaal niet","Een beetje","Neutraal","Grotendeels","Helemaal"];
+
+const $ = id => document.getElementById("lt-"+id);
+let answers = new Array(ITEMS.length).fill(null);
+let idx = 0;
+const fmt = n => n.toFixed(1).replace(".", ",");
+
+function show(view){
+  for (const v of ["intro","quiz","result"]) $(v).hidden = (v !== view);
+  document.getElementById("mojo-lt").scrollIntoView({block:"start"}); sendHeight();
+}
+
+function renderQ(){
+  const [, text] = ITEMS[idx];
+  $("qnum").textContent = `Uitspraak ${idx+1} van ${ITEMS.length}`;
+  $("bar").style.width = `${(idx/ITEMS.length)*100}%`;
+  $("statement").textContent = text;
+  $("back").style.visibility = idx === 0 ? "hidden" : "visible";
+  const box = $("opts"); box.innerHTML = "";
+  SCALE.forEach((lab, i) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "opt" + (answers[idx] === i+1 ? " on" : "");
+    b.innerHTML = `<span class="n">${i+1}</span><span>${lab}</span>`;
+    b.addEventListener("click", () => choose(i+1));
+    box.appendChild(b);
+  });
+}
+
+function choose(v){
+  answers[idx] = v;
+  [...$("opts").children].forEach((b,i) => b.classList.toggle("on", i+1 === v));
+  setTimeout(() => {
+    if (idx < ITEMS.length - 1){ idx++; renderQ(); }
+    else { $("bar").style.width = "100%"; renderResult(); }
+  }, 180);
+}
+
+function scores(){
+  const sum = {}, cnt = {};
+  ITEMS.forEach(([k], i) => { sum[k] = (sum[k]||0) + (answers[i]||0); cnt[k] = (cnt[k]||0) + 1; });
+  return Object.keys(LANGS).map(k => ({k, avg: sum[k]/cnt[k]})).sort((a,b) => b.avg - a.avg);
+}
+
+function renderResult(){
+  const s = scores();
+  const top = s.filter(x => Math.abs(x.avg - s[0].avg) < 0.01);
+  const main = LANGS[top[0].k];
+  $("r-title").textContent = top.length > 1
+    ? top.map(t => LANGS[t.k].name).join(" en ")
+    : main.name;
+  $("r-core").textContent = (top.length > 1 ? "Je scoort even hoog op meerdere talen. Lees hieronder bij alle vijf verder. " : "") + main.core;
+  $("r-bed").textContent = main.bed;
+  $("r-tip").textContent = main.tip;
+  $("r-partner").textContent = main.partner;
+
+  $("bars").innerHTML = s.map(x => {
+    const L = LANGS[x.k];
+    const pct = ((x.avg - 1) / 4) * 100;
+    return `<div class="bar"><span class="lab">${L.name}</span><span class="track"><i style="width:${Math.max(pct,3)}%;background:${L.color}"></i></span><span class="val">${fmt(x.avg)}</span></div>`;
+  }).join("");
+
+  const low = s[s.length-1];
+  const spread = s[0].avg - low.avg;
+  $("r-low").textContent = spread < 0.7
+    ? "Je scores liggen dicht bij elkaar. Dat is heel normaal: de meeste mensen hebben alle vijf de talen nodig, in wisselende mate."
+    : `Je laagste score is ${LANGS[low.k].name.toLowerCase()}. Let daar juist op: wat jij weinig nodig hebt, geef je vaak ook weinig. Misschien is het voor je partner wel de belangrijkste taal.`;
+
+  $("all").innerHTML = Object.entries(LANGS).map(([k,L]) => `
+    <details>
+      <summary><span class="dot" style="background:${L.color}"></span>${L.name}</summary>
+      <div class="inner">
+        <p>${L.core}</p>
+        <div class="bedroom"><h4 style="margin:0;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent)">In de slaapkamer</h4><p>${L.bed}</p></div>
+        <p><strong>Probeer samen:</strong> ${L.tip}</p>
+      </div>
+    </details>`).join("");
+
+  
+  show("result");
+}
+
+$("start").addEventListener("click", () => { idx = 0; renderQ(); show("quiz"); });
+$("back").addEventListener("click", () => { if (idx > 0){ idx--; renderQ(); } });
+$("again").addEventListener("click", () => { answers.fill(null); idx = 0; show("intro"); });
+$("copy").addEventListener("click", () => {
+  let url; try { url = parent.location.href; } catch(e){ url = document.referrer || location.href; }
+  url = url.split("#")[0];
+  const done = () => { $("copy").textContent = "Link gekopieerd"; };
+  const fallback = () => { const f = $("copyfield"); f.value = url; f.hidden = false; f.select(); $("copy").textContent = "Selecteer en kopieer de link"; };
+  try { navigator.clipboard.writeText(url).then(done, fallback); } catch(e){ fallback(); }
+});
+document.addEventListener("keydown", e => {
+  if ($("quiz").hidden) return;
+  const n = parseInt(e.key, 10);
+  if (n >= 1 && n <= 5) choose(n);
+});
+
+function sendHeight(){
+  const h = Math.ceil(document.getElementById("mojo-lt").getBoundingClientRect().height);
+  try{ if (window.frameElement) window.frameElement.style.height = h + "px"; }catch(e){}
+  try{ parent.postMessage({mojoLiefdestaal: h}, "*"); }catch(e){}
+}
+new ResizeObserver(sendHeight).observe(document.body);
+
+})();
+</script>
+</body>
+</html>

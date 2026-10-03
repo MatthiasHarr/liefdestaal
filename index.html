@@ -339,10 +339,13 @@ function renderResult(){
 
 $("start").addEventListener("click", () => { idx = 0; renderQ(); show("quiz"); });
 $("back").addEventListener("click", () => { if (idx > 0){ idx--; renderQ(); } });
-$("again").addEventListener("click", () => { answers.fill(null); idx = 0; show("intro"); });
+const SHARE_URL = "http://love-language.instituteoflove.nl/";
+$("again").addEventListener("click", () => {
+  try { window.top.location.href = SHARE_URL; }
+  catch(e){ answers.fill(null); idx = 0; show("intro"); }
+});
 $("copy").addEventListener("click", () => {
-  let url; try { url = parent.location.href; } catch(e){ url = document.referrer || location.href; }
-  url = url.split("#")[0];
+  const url = SHARE_URL;
   const done = () => { $("copy").textContent = "Link gekopieerd"; };
   const fallback = () => { const f = $("copyfield"); f.value = url; f.hidden = false; f.select(); $("copy").textContent = "Selecteer en kopieer de link"; };
   try { navigator.clipboard.writeText(url).then(done, fallback); } catch(e){ fallback(); }
